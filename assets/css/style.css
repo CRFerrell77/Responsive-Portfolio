@@ -1,0 +1,491 @@
+
+.wrapper {
+  /* Box-model */
+  width: 960px;
+  /* Positioning */
+  margin: 40px auto;
+}
+
+.firstCol {
+    width: 63.5%;
+    float: left;
+    color: #777777;
+    background-color: #ffffff;
+    border-style: solid;
+    border-color: #dddddd;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-right: 10px;
+    }
+
+.secondCol {
+    width: 28%;
+    float: left;
+    color: #777777;
+    background-color: #ffffff;
+    border-style: solid;
+    border-color: #dddddd;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 10px;
+    }
+
+/** NOT USED
+.upRight {
+    float: right;
+    list-style-type: none;
+}
+
+.navLinks {
+    display: inline;
+    padding-left: 20px;
+    font-size: 12px;
+}
+**/
+
+.alignCen {
+    text-align: center;
+    align-items: center;
+}
+
+#name {
+    color: #ffffff;
+    font-size: 20px;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    
+}
+
+#bioImage {
+    width: 200px;
+    height: 200px;
+    margin-right: 20px;
+    float: left;
+}
+
+#linkImage {
+    width: 37px;
+    height: 37px;
+    margin-right: 19px;
+    margin-left: 19px;
+    float: left;
+
+}
+
+
+.content {
+  flex: 1 0 auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 150%;
+
+    color: #777777;
+    /*background-color: #ffffff;*/
+    background-image: url(hypnotize.png);
+    
+    
+    border-style: solid;
+    border-color: #dddddd;
+}
+
+header {
+    color: #4aaaa5;
+    background-color: #ffffff;
+    border-color: #cccccc;
+}
+
+footer {
+    text-align: center;
+    font-size: 10px;
+    color: #ffffff;
+    background-color: #666666;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-style: solid;
+    border-width: 5px 0px 0px 0px;
+    border-color: #4aaaa5;
+
+}
+
+h1 {
+    padding: 20px 0;
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    color: #4aaaa5;
+    background-color: #ffffff;
+
+}
+
+h2 {
+    padding: 20px 0;
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    color: #4aaaa5;
+    background-color: #ffffff;
+
+}
+
+a {
+    color: #777777;
+    text-decoration: none;
+
+}
+
+/** Redoing the Nav Bar **/
+
+.reactive ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    color: #4aaaa5;
+    background-color: #ffffff;
+}
+
+.reactive li {
+    float: left;
+    border-right:1px solid #4aaaa5;
+}
+
+.reactive a {
+    display: block;
+    color: #4aaaa5;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.reactive a:hover:not(.active) {
+    background-color: #4aaaa5;
+    color: white;
+}
+
+.active {
+    color: white;
+    background-color: #4aaaa5;
+}
+
+/** button arrows 
+NO LONGER USED
+
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #4aaaa5;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 10px;
+  padding: 0px;
+  width: 50px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 10px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+**/
+
+
+/** Fancy text-over fade in on profile **/
+
+.textOverContainer {
+    position: relative;
+    width: 50%;
+}
+
+.textOverImage {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.textOverMiddle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.textOverContainer:hover .textOverImage {
+  opacity: 0.3;
+}
+
+.textOverContainer:hover .textOverMiddle {
+  opacity: 1;
+}
+
+.textOverText {
+  background-color: #4aaaa5;
+  color: #ffffff;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+#textOverRoom {
+    padding-bottom: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+/**submission form**/
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */  
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #4aaaa5;
+    color: #ffffff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #38807c;
+}
+
+/* Add a background color and some padding around the form */
+.submitContainer {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+/*
+  These rules take effect when the browser's width
+  is either 980px or less.
+*/
+@media screen and (max-width: 980px) {
+
+  body {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+  /* The wrapper's width will be 600px */
+  .wrapper {
+    width: 855px;
+    margin: 10px auto;
+    padding-right: 100px;
+    padding-left: 100px;
+  }
+
+  .firstCol {
+    width: 63.5%;
+    float: left;
+    color: #777777;
+    background-color: #ffffff;
+    border-style: solid;
+    border-color: #dddddd;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-right: 10px;
+    }
+
+.secondCol {
+    width: 28%;
+    float: left;
+    color: #777777;
+    background-color: #ffffff;
+    border-style: solid;
+    border-color: #dddddd;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 10px;
+    }
+    
+#bioImage {
+    width: 350px;
+    height: 350px;
+   /* align-self: center; NOR
+   justify-content: center;
+   ==did not work 
+   ==made image bigger to "cheat it"
+   */
+    padding-bottom: 25px;
+    
+}
+
+#linkImage {
+    width: 37px;
+    height: 37px;
+    margin-right: 5px;
+    margin-left: 5px;
+    float: left;
+}
+
+}
+
+/*
+  These rules take effect when the browser's width
+  is either 768px or less.
+*/
+@media screen and (max-width: 768px) {
+
+  .wrapper {
+    width: 768px;
+    margin: 10px auto;
+
+  }
+
+  .firstCol {
+    width: 100%;
+    float: left;
+    color: #777777;
+    background-color: #ffffff;
+    border-style: solid;
+    border-color: #dddddd;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-right: 0px;
+    }
+
+.secondCol {
+    width: 100%;
+    float: left;
+    color: #777777;
+    background-color: #ffffff;
+    border-style: solid;
+    border-color: #dddddd;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 0px;
+    margin-top: 20px;    
+    margin-bottom: 20px;
+    }
+
+.alignCen {
+    text-align: left;
+    align-items: left;
+    }
+
+#linkImage {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    float: left;
+}
+
+}
+
+/*
+  These rules take effect when the browser's width
+  is either 640px or less.
+*/
+@media screen and (max-width: 640px) {
+.wrapper {
+    width: 640px;
+    margin: 10px auto;
+}
+
+#name {
+    width: 640px;
+    color: #ffffff;
+    font-size: 20px;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    padding-right: 225px;
+}
+
+.reactive ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    color: #4aaaa5;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.reactive li {
+    display: inline-block;
+    float: left;
+    border-right:1px solid #4aaaa5;
+    text-align: center;
+}
+
+.reactive a {
+    float: none;
+    display: block;
+    color: #4aaaa5;
+    text-align: center;
+    padding: 14px 16px;
+    padding-left: 43px;
+    padding-right: 44px;
+    text-decoration: none;
+}
+
+.reactive a:hover:not(.active) {
+    background-color: #4aaaa5;
+    color: white;
+}
+
+.active {
+    color: white;
+    background-color: #4aaaa5;
+}
+
+}

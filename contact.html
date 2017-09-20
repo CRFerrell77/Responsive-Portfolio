@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Linking CSS -->
+	<link rel="stylesheet" type="text/css" 
+	href="assets\css\reset.css">
+	<link rel="stylesheet" type="text/css" 
+	href="assets\css\style.css">
+</head>
+
+<body >
+
+	<div class="content">
+
+		<nav class="reactive">
+												
+			<div class="wrapper">
+				<ul>
+					<li>
+						<a class="active" id="name">Christian R Ferrell</a>
+					</li>
+					<li style="float:right">
+						<a href="contact.html">Contact</a>
+					</li>
+					<li style="float:right">
+						<a href="portfolio.html">Portfolio</a>
+					</li>
+					<li style="float:right">
+						<a href="index.html">About</a>
+					</li>
+				</ul>
+			</div>
+
+		</nav>
+
+		<div class="wrapper">
+
+<!-- this is the stuff that changes from page to page -->
+			<div class="firstCol">
+
+				<h1>
+					Contact Me:
+				</h1>
+
+				<div class="submitContainer">
+					
+					<form action="mailto:rtranter25@gmail.com" method="post" enctype="text/plain" id="usrform">
+							
+						<label>Name</label>
+						<br>
+						
+						<input type="text" name="name" placeholder="John Smith">
+						<br>
+					
+						<label>Email</label>
+						<br>
+						
+						<input type="text" name="email" placeholder="johnsmith@gmail.com">
+						<br>
+					
+						<label>Message</label>
+						<br>
+						
+						<textarea class="message-box" name="comment" form="usrform"  rows="4" cols="92"></textarea>
+					
+						<input class="sendemail" type="submit" value="Submit">
+									
+						<input  class="sendemail" type="reset" value="Reset">
+					
+					</form>
+
+				</div>	
+
+			</div>
+
+<!-- this is the stuff that does not change from page to page -->
+			<div class="secondCol">
+			
+				<div class="alignCen">
+				
+					<h2>
+						Connect with me
+					</h2>	
+					
+					<div class="alignCen">
+						<a href="https://www.facebook.com/cferrell77">
+							<img id="linkImage" src="assets\images\Facebook.png" alt="Facebook Profile">
+						</a>
+						<a href="https://github.com/CRFerrell77">
+							<img id="linkImage" src="assets\images\GitHub.png" alt="GitHub Profile">
+						</a>
+						<a href="https://www.linkedin.com/in/ferrellchristianr/">
+							<img id="linkImage" src="assets\images\LinkedIn.png" alt="LinkedIn Profile">
+						</a>
+					</div>
+
+				</div>
+
+			</div>
+			
+		</div>
+
+	</div>	
+
+</body>
+
+<footer>
+&copy; Copyright 2017 Christian R Ferrell	
+</footer>
+
+</html>
